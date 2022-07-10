@@ -1,0 +1,8 @@
+<!-- ng-container digunakan ketika kita ingin membuat kondisi di dalam sebuah tag html tanpa membuat gap lagi di dalamnya. ketika di compile di browser maka ng-container akan hilang/tidak ada tag jadi langsung tulisan biasa tanpa tag html -->
+
+<button (click)="isShowing = !isShowing">
+  <ng-container *ngIf="!isShowing">Tampilkan</ng-container>
+  <ng-container *ngIf="isShowing">Sembunyikan</ng-container>
+</button>
+
+<h3 *ngIf="isShowing">Tampilkan Saya</h3>
