@@ -1,0 +1,10 @@
+<ul>
+  <ng-container *ngFor="let user of users; let idx = index">
+    <li>
+      <h3>{{ idx + 1 }}</h3>
+      <h3>Nama Lengkap : {{ user.name }}</h3>
+      <h3>Umur : {{ user.old }}</h3>
+      <h3>Alamat : {{ user.address }}</h3>
+    </li>
+  </ng-container>
+</ul>
